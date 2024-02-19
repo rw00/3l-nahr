@@ -1,0 +1,78 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.bi {
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+
+.social-media-app-img {
+  width: 24px;
+  height: 24px;
+}
+
+.ar-txt {
+  font-family: "Amiri", serif;
+}
+
+#content {
+  text-align: center;
+}
+
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#venue {
+  background-image: url("../img/venue.jpg");
+}
+
+#park {
+  background-image: url("../img/park.jpg");
+}
+
+.with-background-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.background-img {
+  flex-shrink: 0;
+  width: 100vw;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.background-txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.parallax {
+  position: relative;
+}
+
+.between-parallax {
+  height: 300px;
+}
+
+.background-img-cover {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
