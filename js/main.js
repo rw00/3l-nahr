@@ -18,8 +18,7 @@ function initScroll() {
   let controller = new ScrollMagic.Controller();
 
   new ScrollMagic.Scene({
-    duration: "200%",
-    triggerHook: "onEnter"
+    duration: "100%"
   })
     .setPin(".parallax")
     .addTo(controller);
