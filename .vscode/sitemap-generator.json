@@ -1,6 +1,6 @@
 {
   "sitemap.xml": {
-    "Protocol": "http",
+    "Protocol": "https",
     "DomainName": "serenopark.com",
     "Root": "./",
     "IncludeExt": [
