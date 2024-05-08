@@ -6,5 +6,6 @@ const ar = {
   "park-headline": "منتزه الرواق لأجمل الأوقات",
   "park-more-info": "استمتع مع الاصدقاء والعائلة على ضفاف نهر الحاصباني",
   "contact-us": "تواصل معنا",
-  "contact-details-description": ":للحجوزات, الرجاء التواصل معنا من خلال"
+  "contact-details-description": ":للحجوزات, الرجاء التواصل معنا من خلال",
+  "sereno-park": "منتزه الرواق"
 };
