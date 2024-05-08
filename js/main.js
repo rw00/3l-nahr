@@ -48,7 +48,7 @@ function resolveLanguage() {
   let url = $(location).attr("href");
   let index = url.indexOf(HASH_SEPARATOR);
   if (index > 0) {
-    let lang = url.substring(index);
+    let lang = url.substring(index + 1);
     if (lang === AR_LANG) {
       return AR_LANG;
     }
