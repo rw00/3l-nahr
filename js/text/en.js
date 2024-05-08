@@ -8,6 +8,7 @@ const en = {
   "contact-us": "Contact us",
   "contact-details-description":
     "We're happy to answer your questions and take your reservations! <br />You can reach out to us via",
-  phone: "Phone",
-  email: "Email"
+  "sereno-park": "Sereno Park",
+  "phone": "Phone",
+  "email": "Email"
 };
