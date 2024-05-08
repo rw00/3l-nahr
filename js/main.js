@@ -41,8 +41,8 @@ function showTextInLanguage(lang) {
           }
         }
       }
-    }
-  });
+    });
+  }
 }
 
 function resolveLanguage() {
