@@ -6,9 +6,11 @@ $(document).ready(function () {
   let lang = resolveLanguage();
   showTextInLanguage(lang);
   let $langSelector = $("#lang-selector");
+  $langSelector.val(lang);
   $langSelector.on("change", function (e) {
     let selectedLang = $langSelector.val();
     showTextInLanguage(selectedLang);
+    setLanguageInUrl(selectedLang);
   });
 
   initScroll();
@@ -25,10 +27,9 @@ function initScroll() {
 }
 
 function showTextInLanguage(lang) {
-  setLanguageInUrl(lang);
-  $(".txt").each((_, e) => {
-    if (e.id) {
-      if (lang === EN_LANG || lang === AR_LANG) {
+  if (lang === EN_LANG || lang === AR_LANG) {
+    $(".txt").each((_, e) => {
+      if (e.id) {
         let obj = eval(lang);
         let translation = obj[e.id];
         if (translation) {
