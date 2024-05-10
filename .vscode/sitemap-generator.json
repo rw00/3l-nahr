@@ -4,8 +4,7 @@
     "DomainName": "serenopark.com",
     "Root": "./",
     "IncludeExt": [
-      ".html",
-      ".php"
+      ".html"
     ],
     "Exclude": [],
     "TagsToInclude": [

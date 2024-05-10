@@ -58,10 +58,12 @@ body {
 }
 
 .background-txt {
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: black;
 }
 
 .parallax {
@@ -69,7 +71,7 @@ body {
 }
 
 .between-parallax {
-  height: 300px;
+  height: 220px;
 }
 
 .background-img-cover {
