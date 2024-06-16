@@ -3,17 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sereno Park - Lebanon</title>
-    <!-- ? in path is intentional -->
-    <link rel="shortcut icon" href="favicon.ico?" type="image/x-icon" />
-    <link rel="icon" href="favicon.png?" type="image/png" />
+    <title>Sereno - Hasbaya, Lebanon</title>
+    <!-- if favicon is not showing, add ? at the end of the href -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.png" type="image/png" />
     <meta name="description" content="Sereno park alongside Hasbani river in Hasbaya, Lebanon." />
     <meta name="geo.region" content="LB" />
     <meta name="geo.placename" content="Hasbaya" />
-    <meta property="og:title" content="Sereno Park, Lebanon" />
+    <meta property="og:title" content="Sereno - Hasbaya, Lebanon" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://serenopark.com" />
-    <!-- fix -->
+    <!-- TO DO : fix -->
     <meta property="og:image" content="https://serenopark.com/img/park.jpg" />
     <!-- TO DO : fix -->
     <link
@@ -81,27 +81,47 @@
     <div class="container">
       <footer class="py-4">
         <div class="row">
-          <div class="col-md-6 offset-md-1 mb-2">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3331.2412767346277!2d35.64667167406296!3d33.390868973413184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ec1dc38750fc7%3A0xb2d8b6d658bb3d63!2zU2VyZW5vICjZhdmG2KrYstmHINin2YTYsdmI2KfZgik!5e0!3m2!1sen!2snl!4v1715365437509!5m2!1sen!2snl"
-              height="450"
-              style="border: 0; width: 100%"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="offset-md-1 col-3">
+            <div class="list-group list-group-flush" id="more-info-list" role="tablist">
+              <a
+                class="list-group-item list-group-item-action"
+                id="list-about-list"
+                data-toggle="list"
+                href="#about"
+                role="tab">
+                About Us
+              </a>
+              <a class="list-group-item list-group-item-action" data-toggle="list" href="#faq" role="tab">FAQs</a>
+            </div>
+          </div>
+          <div class="col-8">
+            <div class="tab-content">
+              <div class="tab-pane" id="about" role="tabpanel">
+                We welcome weddings and events at our open venue during the warm season. For more information about
+                pricing, please contact us.
+              </div>
+              <div class="tab-pane" id="faq" role="tabpanel">
+                <details>
+                  <summary>What is the venue capacity?</summary>
+                  <p>
+                    We can seat up to 350 people. A large area remains available as a dance floor. There's also a stage
+                    for event performances.
+                  </p>
+                </details>
+                <details>
+                  <summary>What services do you provide?</summary>
+                  <p>
+                    We can plan your wedding or event in collaboration with our DJ partner and catering partner.
+                    <br />We also sell cold and hot beverages.
+                  </p>
+                </details>
+              </div>
+            </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-3 offset-md-1 mb-2">
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted txt" id="home">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted txt" id="pricing">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted txt" id="faq">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted txt" id="about">About</a></li>
-            </ul>
-          </div>
           <div class="col-md-6 offset-md-1 mb-2">
-            <h5 class="txt" id="contact-us"></h5>
+            <h5 class="txt mt-5" id="contact-us"></h5>
             <p class="txt" id="contact-details-description"></p>
             <ul>
               <li><span class="txt" id="phone"></span>&nbsp;<a href="tel:+96176842956">+96176842956</a></li>
@@ -110,6 +130,17 @@
                 <a href="mailto:sereno.park.lb@gmail.com">sereno.park.lb@gmail.com</a>
               </li>
             </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 offset-md-1 mb-2">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3331.2412767346277!2d35.64667167406296!3d33.390868973413184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ec1dc38750fc7%3A0xb2d8b6d658bb3d63!2zU2VyZW5vICjZhdmG2KrYstmHINin2YTYsdmI2KfZgik!5e0!3m2!1sen!2snl!4v1715365437509!5m2!1sen!2snl"
+              height="450"
+              style="border: 0; width: 100%"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
 

@@ -3,6 +3,19 @@ const EN_LANG = "en";
 const AR_LANG = "ar";
 
 $(document).ready(function () {
+  initLanguage();
+
+  initScroll();
+
+  activateCollapseButtons();
+
+  $("#more-info-list a").on("click", function (e) {
+    e.preventDefault();
+    $(this).tab("show");
+  });
+});
+
+function initLanguage() {
   let lang = resolveLanguage();
   showTextInLanguage(lang);
   let $langSelector = $("#lang-selector");
@@ -12,9 +25,7 @@ $(document).ready(function () {
     showTextInLanguage(selectedLang);
     setLanguageInUrl(selectedLang);
   });
-
-  initScroll();
-});
+}
 
 function initScroll() {
   let controller = new ScrollMagic.Controller();
@@ -24,6 +35,26 @@ function initScroll() {
   })
     .setPin(".parallax")
     .addTo(controller);
+}
+
+function activateCollapseButtons() {
+  $(".collapse-content-btn").click(function (event) {
+    this.classList.toggle("active");
+    let collapsibleContent = this.nextElementSibling;
+    if (collapsibleContent.classList.contains("collapsible-content-display")) {
+      if (collapsibleContent.style.display === "none") {
+        collapsibleContent.style.display = "block";
+      } else {
+        collapsibleContent.style.display = "none";
+      }
+    } else {
+      if (collapsibleContent.style.maxHeight) {
+        collapsibleContent.style.maxHeight = null;
+      } else {
+        collapsibleContent.style.maxHeight = collapsibleContent.scrollHeight + "px";
+      }
+    }
+  });
 }
 
 function showTextInLanguage(lang) {

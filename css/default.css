@@ -80,3 +80,14 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.collapsible-content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+.collapsible-content-display {
+  overflow: hidden;
+  display: none;
+}
